@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Home.css';
+
+import hero from './images/hero.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
-          <img className="u-max-full-width" src="images/hero.jpg" style={{ marginTop: '5%' }} />
+          <img
+            alt="Children overseeing the the growth of cabbage in the garden."
+            className="u-max-full-width"
+            src={hero}
+            style={{ marginTop: '5%' }}
+          />
         </div>
 
         <div className="row">
