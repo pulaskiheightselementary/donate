@@ -14,6 +14,22 @@
 	margin-top: .375rem;
 }
 
+.u-margin-bottom-x-large {
+	margin-bottom: 3rem;
+}
+
+.u-margin-bottom-large {
+	margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+	margin-bottom: .75rem;
+}
+
+.u-margin-bottom-small {
+	margin-bottom: .375rem;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -33,6 +49,26 @@
 
 	.u-margin-top-small {
 		margin-top: .5rem;
+	}
+
+	.u-margin-bottom-x-large {
+		margin-bottom: 4rem;
+	}
+
+	.u-margin-bottom-large {
+		margin-bottom: 2rem;
+	}
+
+	.u-margin-bottom-medium {
+		margin-bottom: 1rem;
+	}
+
+	.u-margin-bottom-small {
+		margin-bottom: .5rem;
+	}
+
+	.u-hidden-on-desktop {
+		display: none;
 	}
 }
 
