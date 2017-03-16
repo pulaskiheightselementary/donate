@@ -9,13 +9,13 @@ const Header = ({ alt, hero, text }) => (
 		<Row>
 			<img
 				alt={alt}
-				className="u-max-full-width u-margin-top-large"
+				className="u-max-full-width u-margin-top-x-large"
 				src={hero}
 			/>
 		</Row>
 
 		<Row>
-			<h4 className="u-margin-top-large">{text}</h4>
+			<h4 className="u-margin-top-medium">{text}</h4>
 		</Row>
 	</div>
 );
