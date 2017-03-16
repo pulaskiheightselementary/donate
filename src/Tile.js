@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from './Button';
 import Column from './Column';
 
 const Tile = ({ children, description, img, title, url }) => (
@@ -14,7 +15,7 @@ const Tile = ({ children, description, img, title, url }) => (
 			<strong>{title}. </strong>
 			{description || children}
 		</div>
-		<a className="button button-primary" href={url}>Donate</a>
+		<Button isPrimary url={url}>Donate</Button>
 	</Column>
 );
 
@@ -23,10 +24,6 @@ Tile.propTypes = {
 	img: React.PropTypes.string,
 	title: React.PropTypes.string,
 	url: React.PropTypes.string
-};
-
-Tile.defaultProps = {
-	url: '#'
 };
 
 export default Tile;

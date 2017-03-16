@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from './Button';
 import Row from './Row';
 
 const Header = ({ alt, hero, text, url }) => (
@@ -18,7 +19,7 @@ const Header = ({ alt, hero, text, url }) => (
 
 		<Row>
 			<h4 className="u-margin-top-medium">{text}</h4>
-			<a className="button" href={url}>About The PTA</a>
+			<Button url={url}>About The PTA</Button>
 		</Row>
 	</div>
 );
