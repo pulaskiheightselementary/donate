@@ -8,9 +8,7 @@ import Tile from './Tile';
 
 const App = () => (
   <div className="container">
-    <Header>
-      At Pulaski Heights Elementary we believe in partnering with parents, families, friends and the district to foster the growth, creativity, and academic excellence of all children. Donating to PHE PTA supports our kids, our community, and our future.
-    </Header>
+    <Header />
     <Row>
       <Tile />
     </Row>
