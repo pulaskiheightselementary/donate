@@ -3,14 +3,18 @@ import React from 'react';
 import Row from './Row';
 
 const Header = ({ alt, hero, text, url }) => (
-	<div>
-		<Row>
-			<img
-				alt={alt}
-				className="u-max-full-width u-margin-top-x-large"
-				src={hero}
-			/>
-		</Row>
+	<div className="u-margin-top-x-large">
+		{hero &&
+			<Row>
+					<figure style={{ margin: 0, padding: 0, maxHeight: '256px', overflow: 'hidden' }}>
+						<img
+							alt={alt}
+							className="u-max-full-width"
+							src={hero}
+						/>
+					</figure>
+			</Row>
+		}
 
 		<Row>
 			<h4 className="u-margin-top-medium">{text}</h4>

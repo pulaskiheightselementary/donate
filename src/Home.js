@@ -2,7 +2,6 @@ import React from 'react';
 
 import './Home.css';
 
-import gardenHero from './images/garden-hero.jpg';
 import gardenProgram from './images/garden-program.jpg';
 import teacherGrants from './images/teacher-grants.jpg';
 import schoolSupplies from './images/school-supplies.jpg';
@@ -19,7 +18,6 @@ const App = () => (
   <div className="container">
     <Header
       alt="Children overseeing the the growth of cabbage in the garden."
-      hero={gardenHero}
       text="At Pulaski Heights Elementary we believe in partnering with parents, families, friends and the district to foster the growth, creativity, and academic excellence of all children. Donating to PHE PTA supports our kids, our community, and our future."
     />
 
