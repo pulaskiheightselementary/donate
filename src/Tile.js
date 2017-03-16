@@ -2,9 +2,14 @@ import React from 'react';
 
 import Column from './Column';
 
-const Tile = () => (
+const Tile = ({ children, description, img, title }) => (
 	<Column size="one-half">
-		Test
+		<img
+			alt={title}
+			className="u-max-full-width"
+			src={img}
+		/>
+		<p className="u-margin-top-small"><strong>{title}.</strong> {description || children}</p>
 	</Column>
 );
 
