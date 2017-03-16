@@ -2,7 +2,7 @@ import React from 'react';
 
 import Column from './Column';
 
-const Tile = ({ children, description, img, title }) => (
+const Tile = ({ children, description, img, title, url }) => (
 	<Column size="one-half">
 		<hr className="u-hidden-on-desktop u-margin-top-x-large u-margin-bottom-large" />
 		<img
@@ -14,8 +14,19 @@ const Tile = ({ children, description, img, title }) => (
 			<strong>{title}. </strong>
 			{description || children}
 		</div>
-		<a className="button button-primary" href="#">Donate</a>
+		<a className="button button-primary" href={url}>Donate</a>
 	</Column>
 );
+
+Tile.propTypes = {
+	description: React.PropTypes.string,
+	img: React.PropTypes.string,
+	title: React.PropTypes.string,
+	url: React.PropTypes.string
+};
+
+Tile.defaultProps = {
+	url: '#'
+};
 
 export default Tile;

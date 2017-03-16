@@ -1,10 +1,8 @@
 import React from 'react';
 
-import gardenHero from './images/garden-hero.jpg';
-
 import Row from './Row';
 
-const Header = ({ alt, hero, text }) => (
+const Header = ({ alt, hero, text, url }) => (
 	<div>
 		<Row>
 			<img
@@ -16,6 +14,7 @@ const Header = ({ alt, hero, text }) => (
 
 		<Row>
 			<h4 className="u-margin-top-medium">{text}</h4>
+			<a className="button" href={url}>About The PTA</a>
 		</Row>
 	</div>
 );
@@ -23,13 +22,8 @@ const Header = ({ alt, hero, text }) => (
 Header.propTypes = {
 	alt: React.PropTypes.string,
 	hero: React.PropTypes.string,
-	text: React.PropTypes.node
-};
-
-Header.defaultProps = {
-	alt: 'Children overseeing the the growth of cabbage in the garden.',
-	hero: gardenHero,
-	text: 'At Pulaski Heights Elementary we believe in partnering with parents, families, friends and the district to foster the growth, creativity, and academic excellence of all children. Donating to PHE PTA supports our kids, our community, and our future.'
+	text: React.PropTypes.node,
+	url: React.PropTypes.string
 };
 
 export default Header;

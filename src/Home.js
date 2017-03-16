@@ -2,18 +2,27 @@ import React from 'react';
 
 import './Home.css';
 
+import gardenHero from './images/garden-hero.jpg';
 import gardenProgram from './images/garden-program.jpg';
 import teacherGrants from './images/teacher-grants.jpg';
 import schoolSupplies from './images/school-supplies.jpg';
 import artMusic from './images/art-music.jpg';
+import academicCompetitions from './images/academic-competitions.jpg';
+import readingIsFundamental from './images/reading-is-fundamental.jpg';
 
 import Header from './Header';
 import Row from './Row';
 import Tile from './Tile';
+import Footer from './Footer';
 
 const App = () => (
   <div className="container">
-    <Header />
+    <Header
+      alt="Children overseeing the the growth of cabbage in the garden."
+      hero={gardenHero}
+      text="At Pulaski Heights Elementary we believe in partnering with parents, families, friends and the district to foster the growth, creativity, and academic excellence of all children. Donating to PHE PTA supports our kids, our community, and our future."
+    />
+
     <Row>
       <Tile
         title="Support the Garden Program"
@@ -42,6 +51,24 @@ const App = () => (
         Make sure that there is no limit to creation at PHE by supporting the art and music program. This fund ensures that the art and music classrooms are stocked with all the necessary supplies for children to flourish.
       </Tile>
     </Row>
+    <Row>
+      <Tile
+        title="Support Academic Competitions"
+        img={academicCompetitions}
+      >
+        Events such as science fair, spelling bee, geography bee, and math olympiad foster learning and healthy competition that inspires excellence. Help kids reach for the stars by donating to keep these events going strong.
+      </Tile>
+      <Tile
+        title="Support Reading is Fundamental"
+        img={readingIsFundamental}
+      >
+        Reading is fundamental provides every child at PHE with a free book twice a year. Research shows that children who grow up with books in their home fair better academically. We want every child to have this advantage.
+      </Tile>
+    </Row>
+
+    <Footer>
+      To help the greatest number of children and ensure that no gift is wasted, funds raised on this page will be used to support programs in the greatest imminent need. 100% of funds support the endeavors of the PHE PTA as we strive to make our school a great choice for all families.
+    </Footer>
   </div>
 );
 
