@@ -11,6 +11,7 @@ const App = () => (
     <Header />
     <Row>
       <Tile />
+      <Tile />
     </Row>
   </div>
 );
