@@ -4,7 +4,7 @@ import Button from './Button';
 import Row from './Row';
 
 const Header = ({ alt, hero, text, url }) => (
-	<div className="u-margin-top-x-large">
+	<div>
 		{hero &&
 			<Row>
 					<figure style={{ margin: 0, padding: 0, maxHeight: '256px', overflow: 'hidden' }}>

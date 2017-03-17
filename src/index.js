@@ -13,7 +13,7 @@ import './skeleton.css';
 
 ReactDOM.render(
   <Router>
-    <div>
+    <div className="u-margin-top-x-large">
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
     </div>

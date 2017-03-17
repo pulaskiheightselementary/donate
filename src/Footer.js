@@ -12,11 +12,13 @@ const Footer = ({ children }) => (
 		</Row>
 		<Row>
 			<Column size="two">
-				<img
-					alt="Pulaski Heights Elementary"
-					src={phe}
-					style={{ height: '72px', width: '72px' }}
-				/>
+				<a href="http://www.pulaskiheightselementary.com/" rel="external">
+					<img
+						alt="Pulaski Heights Elementary"
+						src={phe}
+						style={{ height: '72px', width: '72px' }}
+					/>
+				</a>
 			</Column>
 			<Column size="ten">
 				<p>{children}</p>
