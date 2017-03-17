@@ -14,9 +14,9 @@ function getGrid(collection, items = []) {
 		...items,
 		(
 			<Row key={`${firstItem.key}-row`}>
-	      <Tile url={`/donate/${firstItem.key}`} {...firstItem} />
-	      {secondItem && <Tile url={`/donate/${secondItem.key}`} {...secondItem} />}
-	    </Row>
+				<Tile url={`/donate/${firstItem.key}`} {...firstItem} />
+				{secondItem && <Tile url={`/donate/${secondItem.key}`} {...secondItem} />}
+			</Row>
 		)
 	]);
 }

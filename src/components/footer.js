@@ -13,18 +13,18 @@ const Footer = ({ children }) => (
 		<Row>
 			<Column size="two">
 				<a href="http://www.pulaskiheightselementary.com/" rel="external">
-					<img
-						alt="Pulaski Heights Elementary"
-						src={phe}
-						style={{ height: '72px', width: '72px' }}
-					/>
-				</a>
-			</Column>
-			<Column size="ten">
-				<p>{children}</p>
-			</Column>
-		</Row>
-	</div>
+				<img
+					alt="Pulaski Heights Elementary"
+					src={phe}
+					style={{ height: '72px', width: '72px' }}
+				/>
+			</a>
+		</Column>
+		<Column size="ten">
+			<p>{children}</p>
+		</Column>
+	</Row>
+</div>
 );
 
 Footer.propTypes = {

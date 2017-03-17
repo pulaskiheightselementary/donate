@@ -5,7 +5,7 @@ import artMusic from './images/art-music.jpg';
 import academicCompetitions from './images/academic-competitions.jpg';
 import readingIsFundamental from './images/reading-is-fundamental.jpg';
 
-export const programs = [
+export const campaigns = [
 	{
 		title: 'Support the Garden Program',
 		description: 'In the PHE garden children plant, tend, harvest, and cook healthy food. Under the expert instruction of a garden teacher, students learn the hard work and patience required for cultivation and the lifelong benefits of farm to table nutrition. This program is paid for exclusively by the PHE PTA.',
