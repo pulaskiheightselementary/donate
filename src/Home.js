@@ -9,10 +9,10 @@ import artMusic from './images/art-music.jpg';
 import academicCompetitions from './images/academic-competitions.jpg';
 import readingIsFundamental from './images/reading-is-fundamental.jpg';
 
-import Header from './Header';
-import Row from './Row';
-import Tile from './Tile';
-import Footer from './Footer';
+import Header from './components/header';
+import Row from './components/row';
+import Tile from './components/tile';
+import Footer from './components/footer';
 
 const App = () => (
   <div className="container">

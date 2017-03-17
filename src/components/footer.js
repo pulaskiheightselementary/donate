@@ -1,9 +1,9 @@
 import React from 'react';
 
-import phe from './images/phe.png';
+import phe from '../images/phe.png';
 
-import Row from './Row';
-import Column from './Column';
+import Row from './/row';
+import Column from './/column';
 
 const Footer = ({ children }) => (
 	<div>

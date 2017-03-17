@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Button from './Button';
-import Column from './Column';
+import Button from './/button';
+import Column from './/column';
 
 const Tile = ({ children, description, img, title, url }) => (
 	<Column size="one-half">

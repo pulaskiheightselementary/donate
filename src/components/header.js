@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Button from './Button';
-import Row from './Row';
+import Button from './/button';
+import Row from './/row';
 
 const Header = ({ alt, hero, text, url }) => (
 	<div>
