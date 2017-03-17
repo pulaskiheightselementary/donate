@@ -2,8 +2,8 @@ import React from 'react';
 
 import phe from '../images/phe.png';
 
-import Row from './/row';
-import Column from './/column';
+import Row from './row';
+import Column from './column';
 
 const Footer = ({ children }) => (
 	<div>
