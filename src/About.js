@@ -12,7 +12,9 @@ const About = () => (
 
 		<p>By supporting Pulaski Heights Elementary, a wide cross-section of Little Rock School District is served. Little Rock has a deep history of segregation. The racial and economic make up of many Little Rock schools still reflects this division. Walking the halls of PHE, you would not suspect that this is the case. Not only does PHE serve a very equally weighted racial makeup that is rare in the district, it is zoned as a school for all socioeconomic groups - children from shelters and upper class neighborhoods alike. This integration makes PHE an important school for benefiting the entire community and furthering equality in education.</p>
 
-		<Button isPrimary url="/">Donate To PHE</Button>
+		<div className="u-margin-bottom-x-large">
+			<Button isPrimary url="/">Donate To PHE</Button>
+		</div>
 	</div>
 );
 
