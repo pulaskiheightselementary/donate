@@ -1,7 +1,16 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import Button from './button';
 import Column from './column';
+
+function logEvent (title) {
+	ReactGA.event({
+		category: 'Donate',
+		action: 'Started Donation',
+		label: title
+	});
+}
 
 const Tile = ({ children, description, img, title, url }) => (
 	<Column size="one-half">
@@ -15,7 +24,7 @@ const Tile = ({ children, description, img, title, url }) => (
 			<strong>{title}. </strong>
 			{description || children}
 		</div>
-		<Button isPrimary url={url}>Donate</Button>
+		<Button onClick={() => logEvent(title)} isPrimary url={url}>Donate</Button>
 	</Column>
 );
 

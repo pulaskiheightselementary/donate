@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Button = ({ children, isPrimary, url }) => (
-	<Link className={`button ${isPrimary ? 'button-primary' : ''}`} to={url}>{children}</Link>
+const Button = ({ children, onClick, isPrimary, url }) => (
+	<Link className={`button ${isPrimary ? 'button-primary' : ''}`} onClick={onClick} to={url}>{children}</Link>
 );
 
 Button.propTypes = {
