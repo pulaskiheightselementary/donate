@@ -1,6 +1,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import {
   HashRouter as Router,
   Route,
@@ -16,8 +17,15 @@ import './normalize.css';
 import './skeleton.css';
 import './custom.css';
 
+ReactGA.initialize('UA-96860345-1');
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 ReactDOM.render(
-  <Router>
+  <Router onUpdate={logPageView}>
     <div className="u-margin-top-x-large">
       <Switch>
         <Route exact path="/" component={Home} />
