@@ -18,14 +18,11 @@ import './skeleton.css';
 import './custom.css';
 
 ReactGA.initialize('UA-96860345-1');
-
-function logPageView() {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
-}
+ReactGA.set({ page: window.location.pathname });
+ReactGA.pageview(window.location.pathname);
 
 ReactDOM.render(
-  <Router onUpdate={logPageView}>
+  <Router>
     <div className="u-margin-top-x-large">
       <Switch>
         <Route exact path="/" component={Home} />
