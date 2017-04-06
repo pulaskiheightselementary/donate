@@ -14,6 +14,18 @@ const Donate = ({ match }) => {
 
 				<p>{currentCampaign.description}</p>
 
+				{currentCampaign.embedCode && <iframe
+					frameBorder="0"
+					height="685px"
+					id="dbox-form-embed"
+					name="donorbox"
+					scrolling="no"
+					seamless
+					src={`https://donorbox.org/embed/${currentCampaign.embedCode}?hide_donation_meter=true`}
+					style={{ maxWidth: '100%', minWidth: '310px' }}
+					width="100%"
+				/>}
+
 			</div>
 		);
 	}

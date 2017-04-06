@@ -10,7 +10,8 @@ export const campaigns = [
 		title: 'Support the Garden Program',
 		description: 'In the PHE garden children plant, tend, harvest, and cook healthy food. Under the expert instruction of a garden teacher, students learn the hard work and patience required for cultivation and the lifelong benefits of farm to table nutrition. This program is paid for exclusively by the PHE PTA.',
 		img: gardenProgram,
-		key: 'garden'
+		key: 'garden',
+		embedCode: '04db908a-c67e-4b25-93f3-18b9a7a13a9c'
 	},
 	{
 		title: 'Support Staff Development and Teacher Grants',

@@ -21,6 +21,11 @@ ReactGA.initialize('UA-96860345-1');
 ReactGA.set({ page: window.location.pathname });
 ReactGA.pageview(window.location.pathname);
 
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://donorbox.org/widget.js';
+document.body.appendChild(script);
+
 ReactDOM.render(
   <Router>
     <div className="u-margin-top-x-large">
