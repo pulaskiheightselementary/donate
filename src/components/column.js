@@ -2,17 +2,18 @@ import React from 'react';
 
 const SINGULAR = ['one', 'one-half', 'one-third'];
 
-function getClassName (size) {
-	return `${size} ${SINGULAR.includes(size) ? 'column' : 'columns'}`
+function getClassName (size, reversed) {
+	return `${size} ${SINGULAR.includes(size) ? 'column' : 'columns'} ${reversed ? 'reversed' : ''}`
 };
 
-const Column = ({ children, size }) => (
-	<div className={getClassName(size)}>
+const Column = ({ children, reversed, size }) => (
+	<div className={getClassName(size, reversed)}>
 		{children}
 	</div>
 );
 
 Column.propTypes = {
+	reversed: React.PropTypes.bool,
 	size: React.PropTypes.oneOf([
 		'one',
 		'two',

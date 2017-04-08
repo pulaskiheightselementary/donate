@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Row from './components/row';
+import Column from './components/column';
 import NotFound from './NotFound';
 import { campaigns } from './data';
 
@@ -10,22 +12,30 @@ const Donate = ({ match }) => {
 	if (currentCampaign) {
 		return (
 			<div className="container">
-				<h4 className="u-margin-top-medium">{currentCampaign.title}</h4>
+				<h4 className="u-margin-top-medium">
+					{currentCampaign.title}
+				</h4>
 
-				<p>{currentCampaign.description}</p>
-
-				{currentCampaign.embedCode && <iframe
-					frameBorder="0"
-					height="685px"
-					id="dbox-form-embed"
-					name="donorbox"
-					scrolling="no"
-					seamless
-					src={`https://donorbox.org/embed/${currentCampaign.embedCode}?hide_donation_meter=true`}
-					style={{ maxWidth: '100%', minWidth: '310px' }}
-					width="100%"
-				/>}
-
+				{currentCampaign.embedCode
+					? <Row>
+						<Column reversed size="one-half">
+							<p>{currentCampaign.description}</p>
+						</Column>
+						<Column reversed size="one-half">
+							<iframe
+								frameBorder="0"
+								height="685px"
+								id="dbox-form-embed"
+								name="donorbox"
+								scrolling="no"
+								seamless
+								src={`https://donorbox.org/embed/${currentCampaign.embedCode}?hide_donation_meter=true`}
+								style={{ maxWidth: '100%', minWidth: '310px' }}
+								width="100%"
+							/>
+						</Column>
+					</Row>
+					: <p>{currentCampaign.description}</p>}
 			</div>
 		);
 	}
