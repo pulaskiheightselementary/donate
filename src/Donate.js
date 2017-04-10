@@ -2,6 +2,7 @@ import React from 'react';
 
 import Row from './components/row';
 import Column from './components/column';
+import DonationSidebar from './components/donation-sidebar';
 import NotFound from './NotFound';
 import { campaigns } from './data';
 
@@ -19,7 +20,7 @@ const Donate = ({ match }) => {
 				{currentCampaign.embedCode
 					? <Row>
 						<Column reversed size="one-half">
-							<p>{currentCampaign.description}</p>
+							<DonationSidebar description={currentCampaign.description} />
 						</Column>
 						<Column reversed size="one-half">
 							<iframe
@@ -35,7 +36,7 @@ const Donate = ({ match }) => {
 							/>
 						</Column>
 					</Row>
-					: <p>{currentCampaign.description}</p>}
+					: <DonationSidebar description={currentCampaign.description} />}
 			</div>
 		);
 	}

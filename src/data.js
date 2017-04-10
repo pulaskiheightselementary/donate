@@ -1,3 +1,5 @@
+import shuffle from 'lodash.shuffle';
+
 import gardenProgram from './images/garden-program.jpg';
 import teacherGrants from './images/teacher-grants.jpg';
 import schoolSupplies from './images/school-supplies.jpg';
@@ -5,7 +7,7 @@ import artMusic from './images/art-music.jpg';
 import academicCompetitions from './images/academic-competitions.jpg';
 import readingIsFundamental from './images/reading-is-fundamental.jpg';
 
-export const campaigns = [
+const campaigns = shuffle([
 	{
 		title: 'Support the Garden Program',
 		description: 'In the PHE garden children plant, tend, harvest, and cook healthy food. Under the expert instruction of a garden teacher, students learn the hard work and patience required for cultivation and the lifelong benefits of farm to table nutrition. This program is paid for exclusively by the PHE PTA.',
@@ -43,4 +45,6 @@ export const campaigns = [
 		img: readingIsFundamental,
 		key: 'reading'
 	}
-];
+]);
+
+export { campaigns };
