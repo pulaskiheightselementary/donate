@@ -13,7 +13,7 @@ const Donate = ({ match }) => {
 
 	if (currentCampaign) {
 		return (
-			<div className="container">
+			<div>
 				<h4 className="u-margin-top-medium">
 					{currentCampaign.title}
 				</h4>

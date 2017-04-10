@@ -3,7 +3,7 @@ import React from 'react';
 import Button from './components/button';
 
 const About = () => (
-	<div className="container">
+	<div>
 		<h4 className="u-margin-top-medium">About the Pulaski Heights Elementary PTA</h4>
 
 		<p>At Pulaski Heights Elementary we believe in partnering with parents, families, friends and the district to foster the growth, creativity, and academic excellence of all children. Budget cuts in a school district already facing difficult financial decisions means we all need to pitch in.  It is our goal to partner with the district to keep our schools strong and give every child the best start possible. The members of the PHE PTA believe that public school can be great. We believe that PHE is already great - a place with devoted staff where children can thrive and become strong contributors to their world. We want to keep it that way.</p>

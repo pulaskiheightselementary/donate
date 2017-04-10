@@ -8,9 +8,10 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Home from './Home';
 import About from './About';
 import Donate from './Donate';
+import Footer from './Footer';
+import Home from './Home';
 import NotFound from './NotFound';
 
 import './normalize.css';
@@ -29,12 +30,15 @@ document.body.appendChild(script);
 ReactDOM.render(
   <Router>
     <div className="u-margin-top-x-large">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route path='/donate/:campaignKey' component={Donate}/>
-        <Route component={NotFound}/>
-      </Switch>
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route path='/donate/:campaignKey' component={Donate}/>
+          <Route component={NotFound}/>
+        </Switch>
+        <Footer />
+      </div>
     </div>
   </Router>,
   document.getElementById('root')
