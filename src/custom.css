@@ -71,13 +71,13 @@ body {
 		margin-bottom: .5rem;
 	}
 
-	.u-hidden-on-desktop {
-		display: none;
-	}
-
 	.column.reversed,
 	.columns.reversed {
 		margin-left: 0;
+	}
+
+	.u-hidden-on-desktop {
+		display: none;
 	}
 }
 
@@ -85,6 +85,10 @@ body {
 	.column.reversed,
 	.columns.reversed {
 		width: 100%;
+	}
+
+	.u-hidden-on-mobile {
+		display: none;
 	}
 }
 
@@ -100,6 +104,10 @@ body {
 	.column.reversed:first-child,
 	.columns.reversed:first-child {
 		margin-right: 0;
+	}
+
+	.u-hidden-on-tablet {
+		display: none;
 	}
 }
 

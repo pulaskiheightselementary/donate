@@ -1,9 +1,19 @@
 import React from 'react';
+import classnames from 'classnames';
 
 const SINGULAR = ['one', 'one-half', 'one-third'];
 
 function getClassName (size, reversed) {
-	return `${size} ${SINGULAR.includes(size) ? 'column' : 'columns'} ${reversed ? 'reversed' : ''}`
+	const singular = SINGULAR.includes(size);
+
+	return classnames(
+		size,
+		{
+			column: singular,
+			columns: !singular,
+			reversed: reversed
+		}
+	);
 };
 
 const Column = ({ children, reversed, size }) => (

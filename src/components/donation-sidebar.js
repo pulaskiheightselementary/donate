@@ -1,20 +1,14 @@
 import React from 'react';
-import ReactGA from 'react-ga';
 
-import Button from './button';
-
-function logEvent () {
-	ReactGA.event({
-		category: 'Donate',
-		action: 'Returned To The List'
-	});
-}
+import Back from './back';
 
 const DonationSidebar = ({ description }) => (
-	<div>
+	<div style={{ marginBottom: '2.5rem' }}>
 		<p>{description}</p>
 
-		<Button onClick={logEvent} url="/">See Other Opportunities</Button>
+		<p><strong>Become a sustaining partner of PHE. </strong>Consider choosing a monthly contribution to make the most difference. As a recurring donor you will receive quarterly updates on how your money is making a difference at PHE.</p>
+
+		<Back desktop />
 	</div>
 );
 
