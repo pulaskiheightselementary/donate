@@ -13,7 +13,7 @@ const campaigns = shuffle([
 		description: 'In the PHE garden children plant, tend, harvest, and cook healthy food. Under the expert instruction of a garden teacher, students learn the hard work and patience required for cultivation and the lifelong benefits of farm to table nutrition. This program is paid for exclusively by the PHE PTA.',
 		img: gardenProgram,
 		key: 'garden',
-		embedCode: '04db908a-c67e-4b25-93f3-18b9a7a13a9c'
+		embedCode: 'garden-program'
 	},
 	{
 		title: 'Support Staff Development and Teacher Grants',
@@ -37,7 +37,8 @@ const campaigns = shuffle([
 		title: 'Support Academic Competitions',
 		description: 'Events such as science fair, spelling bee, geography bee, and math olympiad foster learning and healthy competition that inspires excellence. Help kids reach for the stars by donating to keep these events going strong.',
 		img: academicCompetitions,
-		key: 'competitions'
+		key: 'competitions',
+		embedCode: 'academic-competitions'
 	},
 	{
 		title: 'Support Reading is Fundamental',
