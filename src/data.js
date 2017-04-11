@@ -33,7 +33,8 @@ const campaigns = shuffle([
 		title: 'Support the Art and Music Program',
 		description: 'Make sure that there is no limit to creation at PHE by supporting the art and music program. This fund ensures that the art and music classrooms are stocked with all the necessary supplies for children to flourish.',
 		img: artMusic,
-		key: 'art-music'
+		key: 'art-music',
+		embedCode: 'art-and-music-programs'
 	},
 	{
 		title: 'Support Academic Competitions',
