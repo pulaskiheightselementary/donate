@@ -19,13 +19,15 @@ const campaigns = shuffle([
 		title: 'Support Staff Development and Teacher Grants',
 		description: 'Excellent teachers are the heartbeat of PHE. They have dreams for improving education but often face budget and logistical barriers. Money donated to this fund allows teacher to submit proposals and receive resources for approved ideas.',
 		img: teacherGrants,
-		key: 'staff'
+		key: 'staff',
+		embedCode: 'staff-development-and-teacher-grants'
 	},
 	{
 		title: 'Support a PHE Child in Need',
 		description: 'The PTA wants to make sure that every child can begin their day with a full stomach and come to school prepared with the necessary supplies to succeed. Money donated to this fund will provide meals and school supplies to children in need.',
 		img: schoolSupplies,
-		key: 'supplies'
+		key: 'supplies',
+		embedCode: 'a-child-in-need'
 	},
 	{
 		title: 'Support the Art and Music Program',
@@ -44,7 +46,8 @@ const campaigns = shuffle([
 		title: 'Support Reading is Fundamental',
 		description: 'Reading is fundamental provides every child at PHE with a free book twice a year. Research shows that children who grow up with books in their home fair better academically. We want every child to have this advantage.',
 		img: readingIsFundamental,
-		key: 'reading'
+		key: 'reading',
+		embedCode: 'reading-is-fundamental'
 	}
 ]);
 
