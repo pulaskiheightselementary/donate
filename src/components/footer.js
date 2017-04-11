@@ -21,7 +21,7 @@ const Footer = ({ children }) => (
 			</a>
 		</Column>
 		<Column size="ten">
-			<p style={{ fontSize: '1rem', paddingTop: '1.5rem' }}>{children}</p>
+			<p style={{ fontSize: '1rem' }}>{children}</p>
 		</Column>
 	</Row>
 </div>
