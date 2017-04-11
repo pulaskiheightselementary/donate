@@ -13,15 +13,13 @@ import Donate from './Donate';
 import Footer from './Footer';
 import Home from './Home';
 import NotFound from './NotFound';
-import ScrollToTop from './components/scroll-to-top';
+import Navigate from './components/navigate';
 
 import './normalize.css';
 import './skeleton.css';
 import './custom.css';
 
 ReactGA.initialize('UA-96860345-1');
-ReactGA.set({ page: window.location.pathname });
-ReactGA.pageview(window.location.pathname);
 
 const script = document.createElement('script');
 script.type = 'text/javascript';
@@ -30,7 +28,7 @@ document.body.appendChild(script);
 
 ReactDOM.render(
   <Router>
-    <ScrollToTop>
+    <Navigate>
       <div className="u-margin-top-x-large">
         <div className="container">
           <Switch>
@@ -42,7 +40,7 @@ ReactDOM.render(
           <Footer />
         </div>
       </div>
-    </ScrollToTop>
+    </Navigate>
   </Router>,
   document.getElementById('root')
 );
